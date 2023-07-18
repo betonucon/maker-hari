@@ -41,7 +41,7 @@
     <form method="POST" action="{{ route('login') }}">
        @csrf
         <div class="form-group has-feedback">
-            <input type="text" id="text" placeholder="Kode Murid" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
+            <input type="text" id="text" placeholder="Username" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
             
             @if ($errors->has('email'))
                 <span class="invalid-feedback" role="alert">
